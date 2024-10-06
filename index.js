@@ -1,23 +1,8 @@
-// // TODO: Include packages needed for this application
-
 import fs from 'fs';
 import inquirer from 'inquirer';
 import generateMarkdown from './utils/generateMarkdown.js';
 
-// // TODO: Create an array of questions for user input
 async function promptsForTheAuthors() {
-  
-  // // function generateReadmePageContent(data) {
-  // //   let readmePageContent = generateMarkdown(data);
-  // //   return readmePageContent;
-  // // };
-  
-  // function writeToFile(fileName, data) {
-  //   // console.log(typeof data, data);
-  //   fs.writeFile('../README.md', data, (err) => {
-  //       err ? console.log(err) : console.log('Successfully generated README!')
-  //       })    
-  //     };
 
   await inquirer
   .prompt([
