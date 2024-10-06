@@ -13,28 +13,12 @@ async function promptsForTheAuthors() {
     },
     {
       type: "input",
-      name: "authors",
-      message: "Who are the authors of this project?",
-    },  
-    {
-      type: "input",
       name: "description",
-      message: "Please take a moment to describe your project",
-    },
-    {
-      type: "input",
-      name: "installation",
-      message: "How should a user install your project?",
-    },
-    {
-      type: "input",
-      name: "support",
-      message: "Do you have specific guidance for users to support your project?",
-    },
-    {
-      type: "input",
-      name: "acknowledgments",
-      message: "Please take a moment to acknowledge supporters of your project",
+      message: `Please take a moment to describe your project If you need direction, consider these questions:
+      - What was your motivation?
+      - Why did you build this project?
+      - What problem does it solve?
+      - What did you learn?`,
     },
     {
       type: "list",
@@ -48,6 +32,34 @@ async function promptsForTheAuthors() {
         "Soliciting Feedback",
         "Complete",
       ],
+    },
+    {
+      type: "input",
+      name: "images",
+      message: `
+Add a screenshot by creating an 'assets/images' folder in your repository and upload your screenshot to it, and add the relative path here, using the following syntax:
+
+    'md ![alt text](assets/images/screenshot.png)'`
+    },
+    {
+      type: "input",
+      name: "installation",
+      message: "Please describe the step necessary to get your project running",
+    },
+    {
+      type: "input",
+      name: "authors",
+      message: "Who are the authors of this project?",
+    },  
+    {
+      type: "input",
+      name: "support",
+      message: "Do you have specific guidance for users who would like to support your project?",
+    },
+    {
+      type: "input",
+      name: "acknowledgments",
+      message: `List your collaborators, with links to their primary web presence. Also indicate any tutorials and third-party assets that require attribution.`,
     },
     {
       type: "list",
