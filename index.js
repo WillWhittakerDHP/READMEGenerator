@@ -38,7 +38,6 @@ async function promptsForTheAuthors() {
       name: "images",
       message: `
 Add a screenshot by creating an 'assets/images' folder in your repository and upload your screenshot to it, and add the relative path here, using the following syntax:
-
     'md ![alt text](assets/images/screenshot.png)'`
     },
     {
